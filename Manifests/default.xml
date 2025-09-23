@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+           
+  <remote name="github"
+           fetch="https://github.com/"
+           review="https://github.com/" />
+           
+  <remote name="custom"
+           fetch="https://git.customrom.com/"
+           review="https://review.customrom.com/" />
+
+  <default revision="refs/tags/android-15.0.0_r1"
+           remote="aosp"
+           sync-j="8"
+           sync-c="true"
+           sync-s="true" />
+
+  <!-- AOSP Core -->
+  <project path="build/make" name="platform/build" groups="pdk" />
+  <project path="build/soong" name="platform/build/soong" groups="pdk" />
+  <project path="art" name="platform/art" />
+  <project path="bionic" name="platform/bionic" />
+  <project path="system/core" name="platform/system/core" />
+  <project path="system/extras" name="platform/system/extras" />
+  
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/av" name="platform/frameworks/av" />
+  <project path="frameworks/native" name="platform/frameworks/native" />
+  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" />
+  
+  <!-- System Apps -->
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/SystemUI" name="platform/packages/apps/SystemUI" />
+  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
+  
+  <!-- Custom Device Tree -->
+  <project path="device/realme/rmx3690" 
+           name="realme-c30s/device_realme_rmx3690" 
+           remote="github"
+           revision="android-15" />
+  
+  <!-- Custom Vendor -->
+  <project path="vendor/custom" 
+           name="realme-c30s/vendor_custom" 
+           remote="github"
+           revision="android-15" />
+  
+  <!-- Custom Kernel -->
+  <project path="kernel/realme/rmx3690" 
+           name="realme-c30s/kernel_realme_rmx3690" 
+           remote="github"
+           revision="android-15-gki" />
+  
+  <!-- Custom Packages -->
+  <project path="packages/apps/CustomSettings" 
+           name="realme-c30s/packages_apps_CustomSettings" 
+           remote="github"
+           revision="android-15" />
+           
+  <project path="packages/apps/GameSpace" 
+           name="realme-c30s/packages_apps_GameSpace" 
+           remote="github"
+           revision="android-15" />
+  
+  <!-- Custom Recovery -->
+  <project path="bootable/recovery" 
+           name="realme-c30s/bootable_recovery" 
+           remote="github"
+           revision="android-15-twrp" />
+  
+  <!-- Custom Themes -->
+  <project path="themes" 
+           name="realme-c30s/themes" 
+           remote="github"
+           revision="main" />
+  
+  <!-- Custom Scripts -->
+  <project path="scripts" 
+           name="realme-c30s/scripts" 
+           remote="github"
+           revision="main" />
+  
+  <!-- Hardware Components -->
+  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" />
+  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
+  
+  <!-- Vendor Blobs (if available) -->
+  <project path="vendor/realme/rmx3690" 
+           name="realme-c30s/vendor_realme_rmx3690" 
+           remote="github"
+           revision="android-15" />
+  
+  <!-- External Dependencies -->
+  <project path="external/openssl" name="platform/external/openssl" />
+  <project path="external/libdrm" name="platform/external/libdrm" />
+  <project path="external/selinux" name="platform/external/selinux" />
+  
+  <!-- Magisk Integration -->
+  <project path="external/magisk" 
+           name="topjohnwu/Magisk" 
+           remote="github"
+           revision="master" />
+
+  <!-- Remove if not needed for minimal builds -->
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/Email" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+
+</manifest>
