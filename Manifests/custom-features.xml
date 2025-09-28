@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="custom-features"
+           fetch="https://github.com/realme-c30s/"
+           review="https://github.com/realme-c30s/" />
+
+  <remote name="feature-github"
+           fetch="https://github.com/"
+           review="https://github.com/" />
+
+  <!-- Только дополнительные фичи, которых нет в default.xml -->
+
+  <!-- AI Enhancements -->
+  <project path="vendor/custom/ai-enhancements" 
+           name="realme-c30s/ai-enhancements" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Advanced Gaming Mode -->
+  <project path="vendor/custom/gaming-plus" 
+           name="realme-c30s/gaming-plus" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Audio Mods -->
+  <project path="vendor/custom/audio/dolby" 
+           name="realme-c30s/dolby-atmos-mod" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <project path="vendor/custom/audio/viper" 
+           name="Team-DeWitt/ViPER4Android-FX" 
+           remote="feature-github"
+           revision="master" />
+
+  <!-- Theme Engine Extensions -->
+  <project path="vendor/custom/theme-engine" 
+           name="realme-c30s/theme-engine-plus" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Battery Optimizations -->
+  <project path="vendor/custom/battery-advanced" 
+           name="realme-c30s/battery-advanced" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Security Enhancements -->
+  <project path="vendor/custom/security-plus" 
+           name="realme-c30s/security-plus" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Camera Improvements -->
+  <project path="vendor/custom/camera-mods" 
+           name="realme-c30s/camera-mods" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Network Optimizations -->
+  <project path="vendor/custom/network-plus" 
+           name="realme-c30s/network-plus" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Thermal Control -->
+  <project path="vendor/custom/thermal-control" 
+           name="realme-c30s/thermal-control-plus" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- UI Customizations -->
+  <project path="vendor/custom/ui-mods" 
+           name="realme-c30s/ui-mods" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Performance Tweaks -->
+  <project path="vendor/custom/performance-tweaks" 
+           name="realme-c30s/performance-tweaks" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- OTA Updates -->
+  <project path="vendor/custom/ota-system" 
+           name="realme-c30s/ota-system" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Magisk Integration -->
+  <project path="vendor/custom/magisk-modules" 
+           name="realme-c30s/magisk-modules" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Custom Boot Animation -->
+  <project path="vendor/custom/boot-animation" 
+           name="realme-c30s/custom-boot-animation" 
+           remote="custom-features"
+           revision="android-15" />
+
+  <!-- Smart Features -->
+  <project path="vendor/custom/smart-features" 
+           name="realme-c30s/smart-features" 
+           remote="custom-features"
+           revision="android-15" />
+
+</manifest>
